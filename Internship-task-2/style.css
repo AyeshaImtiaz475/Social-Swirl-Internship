@@ -1,0 +1,79 @@
+/* html{
+
+} */
+ /* *{
+
+ } */
+:root{
+    --myColor: blue;
+}
+ul{
+    list-style-type:lower-greek;
+}
+.container{
+    width: 100%;
+    height: 70vh;
+    display: flex;
+    /* flex-direction: column; */
+    /* flex-direction: column-reverse; */
+    /* justify-content: center; */
+    /* justify-content: end; */
+    /* justify-content: space-around; */
+    justify-self: center;
+    /* align-items: center; */
+    align-items: stretch;
+    border: 1px solid black;
+    gap:20px;
+    /* column-gap: 20px;
+    row-gap: 50px; */
+    flex-wrap: wrap;
+}
+.items{
+    width: 200px;
+    height: 150px;
+    border: 5px solid sandybrown;
+}
+.container1{
+    width: 100%;
+    height: 60vh;
+    background-color: var(--myColor)
+}
+.container1 >div{
+    width: 200px;
+    height: 100px;
+    border: 1px solid black;   
+}
+
+@media (max-width: 430px)
+{
+    .container1{
+        background-color: rgb(9, 244, 56);
+    }
+    .container1 >div{
+        color: white;
+        border: 2px solid white;
+    }
+}
+.para{
+    border: 5px solid blue;
+    outline: 70px;
+}
+.container2{
+    background: url(https://cdn.britannica.com/89/131089-050-A4773446/flowers-garden-petunia.jpg);
+    width: 700px;
+    height: 400px;
+    background-size: cover;
+    background-repeat:no-repeat;
+    border: 1px solid black;
+}
+.container3{
+    width: 1000%;
+    height: 60vh;
+    border: 1px solid red;
+}
+.my-box{
+    width: 5%;
+    height: 60vh;
+    border: 1px solid blue;
+}
+
