@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM IN JS</title>
+    <style>
+        .tile{
+          height: 200px;
+          width: 25%;
+          float: left;
+        }
+    </style>
+</head>
+<body>
+    <!-- <div id="container">
+        <button>Click Me!</button>
+    </div>
+    <pre id="output"></pre> -->
+
+    <!-- <div id="container">
+        <div class="tile"></div>
+        <div class="tile"></div>
+        <div class="tile"></div>
+        <div class="tile"></div>
+        <div class="tile"></div>
+        <div class="tile"></div>
+        <div class="tile"></div>
+        <div class="tile"></div>
+        <div class="tile"></div>
+        <div class="tile"></div>
+        <div class="tile"></div>
+        <div class="tile"></div>
+        <div class="tile"></div>
+        <div class="tile"></div>
+        <div class="tile"></div>
+        <div class="tile"></div>
+      </div> -->
+
+
+      <!-- test skills -->
+       <!-- <button class="off">Machine is off</button> -->
+
+       <button id="red">red</button>
+       <button id="yellow">yellow</button>
+       <button id="green">Green</button>
+       <button id="purple">Purple</button>
+
+
+    <script>
+
+    //     const output = document.querySelector("#output");
+    //    function handleClick(e) {
+    //  output.textContent += `You clicked on a ${e.currentTarget.tagName} element\n`;
+    //  }
+
+    //  const container = document.querySelector("#container");
+    //  const button = document.querySelector("button");
+     
+    //  //call the function
+    //  document.body.addEventListener("click", handleClick);
+    //  container.addEventListener("click", handleClick);
+    //  button.addEventListener("click", handleClick);
+
+
+    //  function random(number)
+    //  {
+    //     //generate the random number 
+    //     return Math.floor(Math.random()*number);
+    //  }
+    //  function bgchange()
+    //  {
+    //     const rndColor = `rgba(${random(255)} ${random(255)} ${random(255)})`;
+    //     return rndColor;
+    //  }
+    //  const container = document.querySelector("#container");
+    //  container.addEventListener("click", (event) => {
+    //     event.target.style.backgroundColor = bgchange();
+    //  })
+
+    
+    // const btn = document.querySelector(".off");
+
+    // btn.addEventListener("click",() => {
+    //     btn.textContent = "Machine is now off. Try again.";
+    // } )
+
+    const redbtn = document.getElementById("red");
+    const yellowbtn = document.getElementById("yellow");
+    const greenbtn = document.getElementById("green");
+    const  purplebtn = document.getElementById("purple");
+
+    redbtn.addEventListener("click", () => {
+        redbtn.style.backgroundColor = "red";
+    })
+    yellowbtn.addEventListener("click", () => {
+        yellowbtn.style.backgroundColor = "yellow";
+    })
+    greenbtn.addEventListener("click", () => {
+        greenbtn.style.backgroundColor = "green";
+    })
+    purplebtn.addEventListener("click", () => {
+        purplebtn.style.backgroundColor = "purple";
+    })
+
+     
+
+
+    </script>
+    
+</body>
+</html>

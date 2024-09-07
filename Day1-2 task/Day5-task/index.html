@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document Object Model in JS</title>
+    <style>
+        /* div{
+            background-color: blue;
+            margin: 1rem 0;
+            height: 100px;
+            width: 200px;
+        } */
+        .box{
+            width: 600px;
+            height: 300px;
+            border: 1px solid black;
+            padding: 2px 4px;
+            overflow-x: scroll;
+            overflow-y: auto;
+        }
+        .log{
+            margin-top: 8px;
+            font-family: monospace;
+        }
+    </style>
+</head>
+<body onload="console.log('Welcome to my home page')">
+
+     <h2>I AM LEARNING JS</h2>
+     <table id="table" border="">
+        <tr>
+            <td>Ayesha</td>
+            <td>RollNo</td>
+            <td>Degree</td>
+            <td>Age</td>
+        </tr>
+     </table>
+
+     <p class="myclass"></p>
+     <div id="this?element"></div>
+     <!-- <button id="no-escape">No escape</button>
+     <button id="css-escape">CSS.escape()</button>
+     <button id="manual-escape">Manual escape</button> -->
+     <pre id="log"></pre>
+
+     <!-- <div id="div1">The text above has been craeted dynamically</div> -->
+
+     <ul  id="list">
+        <li><a href="#">item 1</a></li>
+        <li><a href="#">item 2</a></li>
+        <li><a href="#">item 3</a></li>
+     </ul>
+
+     <div class="box">
+        <div><strong>Log:</strong></div>
+        <div class="log"></div>
+     </div>
+
+     <!-- <button>Hello World</button> -->
+
+     <div id="div1">Hi Champ!</div>
+
+     <input type="button" value="Generate a table" onclick="generateTable()">
+
+     <input type="button" value="Set paragraph background color" onclick="setBackground()">
+     <p>Hi</p>
+     <p>Hello</p>
+
+     <!-- //<button>Change Color</button> -->
+      <button onclick="bgChange()">Press me</button>
+      <input id="textBox" type="text" />
+      <div id="output"></div>
+
+      
+
+    <script>
+        //run the function whenever the document is loaded
+        // window.onload = () => {
+        //     const heading = document.createElement("h1");
+        //     const headingText = document.createTextNode("Big head!!");
+        //     heading.appendChild(headingText);
+        //     document.body.appendChild(heading);
+
+        //     const paragraph = document.createElement("p");
+        //     const paragraphtext = document.createTextNode(" Lorem, ipsum dolor sit amet consectetur adipisicing elit. Illum modi unde doloribus sequi quae est minus eos voluptates eligendi vitae totam vero, et fuga architecto debitis voluptatibus quibusdam nemo vel?");
+        //     paragraph.appendChild(paragraphtext);
+        //     document.body.appendChild(paragraph);
+
+        //     const button = document.createElement("button");
+        //     const buttontext = document.createTextNode('Click here!');
+        //     button.appendChild(buttontext);
+        //     document.body.appendChild(button);
+
+        //     //interface 
+        //     const table = document.getElementById("table");
+        //     const tableAttrs = table.attributes;
+        //     for(let i=0; i<tableAttrs.length; i++)
+        // {
+        //     if(tableAttrs[i].nodeName.toLowerCase() === 'border')
+        // {
+        //     table.border= "4"
+        // }
+        // }
+        // }
+        // const ele = document.querySelector(".myclass");
+        // ele.style.backgroundColor = "red";
+        // console.log(ele);
+
+    //     const log = document.querySelector("#log");
+
+    //      function random(number) {
+    //     return Math.floor(Math.random() * number);
+    //     }
+
+    //     function setBackgroundColor(id) {
+    //     log.textContent = "";
+
+    //      try {
+    //      const element = document.querySelector(`#${id}`);
+    //      const randomColor = `rgb(${random(255)} ${random(255)} ${random(255)})`;
+    //      element.style.backgroundColor = randomColor;
+    //       } catch (e) {
+    //     log.textContent = e;
+    //   }
+    // }
+
+    // document.querySelector("#no-escape").addEventListener("click", () => {
+    // setBackgroundColor("this?element");
+    //  });
+
+    // document.querySelector("#css-escape").addEventListener("click", () => {
+    // setBackgroundColor(CSS.escape("this?element"));
+    //    });
+
+    //  document.querySelector("#manual-escape").addEventListener("click", () => {
+    //  setBackgroundColor("this\\?element");
+    //   });
+        
+
+    //  //document.createElement
+    //  document.body.onload = addElement;
+
+    //  function addElement()
+    //  {
+    //     //create a new div
+    //     const newDiv = document.createElement("div");
+    //     //add a content inside the div
+    //     const newContent = document.createTextNode('Hi there and greetings!');
+
+    //     //append the text inside the new Div
+    //     newDiv.appendChild(newContent);
+    //     const currentDiv = document.getElementById("div1");
+    //     document.body.insertBefore(newDiv, currentDiv)
+    //  }
+
+     //Element.innerHTML 
+    //  const list = document.getElementById("list");
+    //  list.innerHTML = list.innerHTML + `<li><a href="#">Item ${list.children.length + 1}</a></li>`;
+    //  list.innerHTML = list.innerHTML + `<li><a href="#">Item ${list.children.length +1}</a></li>`;
+    //  list.innerHTML = list.innerHTML + `<li><a href="#">Item ${list.children.length +1}</a></li>`;
+    //  list.innerHTML = list.innerHTML + `<li><a href="#">Item ${list.children.length +1}</a></li>`;
+
+    //  function log(msg) {
+    //  const logElem = document.querySelector(".log");
+
+    //  const time = new Date();
+    //  const timeStr = time.toLocaleTimeString();
+    //  logElem.innerHTML += `${timeStr}: ${msg}<br/>`;
+    //   }
+
+    // log("Logging mouse events inside this container…");
+
+    
+    // function logEvent(event) {
+    // const msg = `Event <strong>${event.type}</strong> at <em>${event.clientX}, ${event.clientY}</em>`;
+    // log(msg);
+    // }
+
+    
+    // const boxElem = document.querySelector(".box");
+    // boxElem.addEventListener("mousedown", logEvent);
+    // boxElem.addEventListener("mouseup", logEvent);
+    // boxElem.addEventListener("click", logEvent);
+    // boxElem.addEventListener("mouseenter", logEvent);
+    // boxElem.addEventListener("mouseleave", logEvent);
+
+    // //setAttribute()
+    // const button = document.querySelector("button");
+    // button.setAttribute("name", "helloButton");
+    // button.setAttribute("disabled", "");
+
+
+    // //get attribute()
+    // const div1 = document.getElementById("div1");
+    // const exampleAttr = div1.getAttribute("id");
+
+
+    function generateTable()
+    {
+        const tbl = document.createElement("table");
+        const tblBody = document.createElement("tbody");
+
+        //creating cells
+        for(let i=0; i<5; i++)
+    {
+        //create a table row
+        const row = document.createElement("tr");
+        for(let j=0; j<5; j++)
+    {
+        //create a td & textcontent
+        const cell = document.createElement("td");
+        const cellText = document.createTextNode(`cell in row${i}, column${j}`);
+        cell.appendChild(cellText);
+        row.appendChild(cell);
+    }
+      //add the row to the end of the table body
+      tblBody.appendChild(row);
+    }
+    tbl.appendChild(tblBody);
+    document.body.appendChild(tbl);
+    tbl.setAttribute("border", "2");
+    }
+
+    function setBackground()
+    {
+        const paragraph = document.getElementsByTagName("p");
+        const secondParagraph = paragraph[2];
+        secondParagraph.style.backgroundColor = 'red';
+    }
+
+    const btn = document.querySelector("button");
+    function random(number)
+    {
+        return Math.floor(Math.random() * (number + 1));
+    }
+    btn.addEventListener("click", () => {
+        const rdnColor = `rgb(${random(255)} ${random(255)} ${random(255)})`;
+        document.body.style.backgroundColor = rdnColor;
+    })
+
+    function bgChange() {
+    const rndCol = `rgb(${random(255)} ${random(255)} ${random(255)})`;
+    document.body.style.backgroundColor = rndCol;
+    }
+
+    const textBox = document.querySelector("#textBox");
+    const output = document.querySelector("#output");
+    textBox.addEventListener("keydown", (event) => {
+    output.textContent = `You pressed "${event.key}".`;
+    });
+
+        
+    </script>
+
+    
+</body>
+</html>
