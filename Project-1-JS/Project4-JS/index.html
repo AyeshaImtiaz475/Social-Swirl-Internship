@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Age Calculator App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="calculator">
+            <h1>JavaScript <br><span>Age Calcualtor</span></h1>
+            <!-- create div for color picker  -->
+             <div class="input-box">
+                <input type="date" id="date">
+                <button onclick="calculateAge()">Calculate</button>
+             </div>
+             <p id="result"></p>
+        </div>
+    </div>
+    
+    <script>
+         //create the date input
+        let userInput = document.getElementById("date");
+        //we can only select current date or past day 
+        userInput.max = new Date().toISOString().split("T")[0];
+        //target the result to get age 
+        let result = document.getElementById("result");
+
+        //create the function to calculate the age 
+        function calculateAge()
+        {
+            //create the variable to store the birth day
+            let birthDate = new Date(userInput.value);
+            let day1 = birthDate.getDate();
+            let month1 = birthDate.getMonth() + 1;
+            let year1 =  birthDate.getFullYear();
+
+            //create the variable to store the current date 
+            let today = new Date();
+            let day2 = today.getDate();
+            let month2 = today.getMonth() + 1;
+            let year2 = today.getFullYear();
+
+            //create the variable to store the difference in day, month, year
+            let d3, m3, y3;
+            //past year value is less than current year value 
+            y3 = year2 - year1;
+            //finding the difference of months 
+            if(month2 >= month1)
+              {
+                m3 = month2 - month1;
+              }
+              else{
+                y3--;
+                m3 = 12 + month2 - month1;
+              }
+              //finding the difference of days 
+              if(day2 >= day1)
+              {
+                d3 = day2 - day1;
+              }
+              else{
+                m3--;
+                d3 = getDaysInMonth(year1, month1) + day2 - day1;
+              }
+              //incase if the month value decrement and become negative
+              if(m3 < 0)
+              {
+                m3 = 11;
+                y3--;
+              }
+              //console.log(y3,m3,d3);
+              result.innerHTML = `You are <span>${y3}</span> years,
+               <span>${m3}</span> months and <span>${d3}</span> days old`;
+
+        }
+
+        function getDaysInMonth(year, month)
+        {
+            return new Date(year, month, 0).getDate();
+        }
+
+
+
+
+
+
+    </script>
+</body>
+</html>
