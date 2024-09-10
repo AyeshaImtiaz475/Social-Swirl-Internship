@@ -1,0 +1,80 @@
+1. Javascript library for building fast and interative UI
+2. Developed by Facebok in 2011
+3. React is the viewlayer of MVC application (model view controller)
+4. Component based: Build encapsulated components that manage their own state, then compose
+them to make complex UIs.
+
+what is this mvc architecture?
+MVC stand for Model-View Controller its is the design pattern which seperate the application into three mian logical components:
+Model, View and Controller, 
+Each pattern is responible to handle some specific functionality for an application.
+It actually isolate the business logic and presentation layer from each other.
+it is used for GUI also now a days used for web development and app development projects.
+
+The main goal is to solve the design data set problem for users to controle the complex data 
+rather it split the application into specific sections.
+
+1. CONTROLLER:
+It enable the interconnection between views and model also controller don't have to worry about the 
+data logic handling process it just have to tell teh responsibility of model and give the input.
+After that ask the view to dsplay the output on the screen.
+
+2.VIEW:
+View is responible for handling the UI logic of application. It generate the user 
+interface for the user. View produce the ui output based on data which is collected by model 
+component but this data is taken not direcly through the model but through controller 
+
+3. Model:
+it contain all the data related logic that the user works with. It add or retrive the data through the database.
+It respond to the model request becuse model itself cannot interact with database, 
+The model interacts with the database and gives the required data back to the controller.
+It perform the CRUD operation
+
+If we already have the DOM then why did we need React?
+React create teh virtual DOM for itself.
+Real Dom: It update the data slowly, can directly update the content of HTML,
+DOM manipualtion is very expensive and memory wastage is high.
+
+Virtual Dom:
+it update the data faster, no memory wastage, Can't direcly update HTML 
+also DOM manipulation is easy.
+
+When ever the state change the Virtual DOM make the practical changes then perform the changes in the real Dom
+It react when state change thats why its called React.
+
+//INSTALLATION PROCESS//
+1. Install the Node.js.
+2. In the terminal run  npx create-react-app hello-world.
+3. Want to run the go live server run: Go to the particular folder 
+ls hello-world 
+cd hello-world 
+npm start
+Inorder to create the new project follow these commands:
+ls 
+cd ../
+npx create-react-app apna-cart
+Inorder to create the components 
+create a seperate folder with the name of components in src 
+
+Types of components:
+Class based(command cc) and functional (command rafce)
+
+
+What is library?
+We used library to write the code faster and also run the code faster. 
+
+what is JSX?
+Javascript syntax  Extension: Misture of javascript + html
+
+What is hot reloading?
+It is the fast reloading mechanism of react.
+
+Two parents will rever return in jsx code so we create the <> </>, react fragment.
+
+How can i pass the data in the component?
+through props
+
+setstate() -> it compare the changes in the virtual DOM and real DOM then make the changes and 
+reflect the changes on the page
+
+In the class component we pass this.props , this.state 
