@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to Tic Tac Toe Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Game description -->
+    <div class="container">
+        <h1 class="heading">TIC TAC TOE</h1>
+        <p id="para">Game starts by just Tap on box
+        <br>First Player starts as <strong>Player X</strong> And
+        Second Player as <strong>Player 0</strong></p>
+
+        <br><br>
+        <!-- 3 different input rows -->
+        <div class="display">
+            <div class="row">
+                <input type="text" id="btn1" class="cell" onclick="myfun(); myfun3();" />
+                <input type="text" id="btn2" class="cell" onclick="myfun(); myfun4();"/>
+                <input type="text" id="btn3" class="cell" onclick="myfun(); myfun5();"/>
+            </div>
+            <div class="row">
+                <input type="text" id="btn4" class="cell" onclick="myfun(); myfun6();"/>
+                <input type="text" id="btn5" class="cell" onclick="myfun(); myfun7();"/>
+                <input type="text" id="btn6" class="cell" onclick="myfun(); myfun8();"/>
+            </div>
+            <div class="row">
+                <input type="text" id="btn7" class="cell" onclick="myfun(); myfun9();"/>
+                <input type="text" id="btn8" class="cell" onclick="myfun(); myfun10();"/>
+                <input type="text" id="btn9" class="cell" onclick="myfun(); myfun11();"/>
+            </div>
+        </div>
+        <!-- reset button -->
+        <button class="reset" onclick="myfun2()">RESET</button>
+        <br> <br>
+        <!-- printing the value  -->
+        <p id="print"></p>
+    </div>
+
+
+    <!-- script tag  -->
+     <script src="game.js"></script>
+</body>
+</html>
