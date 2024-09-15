@@ -1,0 +1,86 @@
+.App-logo {
+  height: 20vmin;
+  pointer-events: none;
+  position: absolute;
+  left: -30px;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: black;
+  height: 20vh;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+.App-header p{
+  position: absolute;
+  left: 145px;
+  font-size: 30px;
+  color: #61dafb;
+}
+.App-header ul{
+  flex-direction: row;
+  display: flex;
+  gap: 20px;
+}
+body{
+  margin: 0;
+  height: 100vh;
+  background:#202329;;
+}
+.App-header ul li{
+  list-style: none;
+  position: absolut;
+  left: 500px;
+  font-size: 22px;
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+.MainContent {
+  color: white;
+  padding: 30px;
+  
+}
+.MainContent h1{
+ font-size: 40px;
+ font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+ position: relative;
+ left: 25px;
+}
+.MainContent ul{
+  font-size: 17px;
+  margin: 10px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.MainContent li::marker{
+  color: #61dafb;
+}
+.MainContent img{
+  width: 500px;
+  height: 350px;
+  position: relative;
+  left: 750px;
+  top: -130px;
+}
