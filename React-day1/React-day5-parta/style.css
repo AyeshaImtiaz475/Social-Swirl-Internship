@@ -1,0 +1,22 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    padding: 20px;
+}
+.nav-items{
+    flex-direction: row;
+    display: flex;
+    gap: 60px;
+}
+.nav-items li{
+    list-style-type: none;
+    position: relative;
+    left: 320px;
+    top: -70px;
+    font-size: 20px;
+}
+.content ul li{
+    padding: 5px;
+}
