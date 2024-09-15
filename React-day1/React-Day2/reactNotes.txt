@@ -1,0 +1,28 @@
+npx : package installer and install package also run for only one time 
+npm: Your package install for long time and store permanently 
+
+Installation process:
+Resources: reactjs.org
+1. npx create-react-app todos-list
+2. cd todos-list
+3. npm start 
+
+READ.md file contain the default content about the react project
+react is the single page application
+
+Components:
+1. class based Components
+2. Function based Components
+
+Create a component:
+a. Header 
+1. Create the component folder in src.
+2. Name the component with.js extension.
+3. Type rfc to create the functional component as a short cut.
+4. Come back in App.js inside the main function return statment> react fragments > initilized the component Name 
+5. Import the path of that component.
+Yahoooo!. Your compoent is created successfully. 
+
+create the two further compoents 
+b.Todos
+c.Footer
