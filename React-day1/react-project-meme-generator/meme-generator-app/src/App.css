@@ -1,0 +1,69 @@
+.nav--items{
+  display: flex;
+  position: relative;
+  margin: 0;
+  background: purple;
+  padding: 0;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.nav--items img{
+  width: 60px;
+  height: 50px;
+  position: relative;
+  left: 10px;
+  top: 10px;
+}
+.nav--items h3{
+  position: relative;
+  left: 40px;
+  font-size: 25px;
+  bottom: 10px;
+  color: white;
+}
+.nav--items h4{
+  position: absolute;
+  left: 890px;
+  font-size: 1rem;
+  color: white;
+}
+.meme form{
+   display: flex;
+   flex-wrap: wrap;
+   align-items: center;
+   gap: 30px;
+}
+.meme form input{
+  width: 320px;
+  height: 60px;
+  position: relative;
+  top: 50px;
+  border-radius: 6px;
+  text-align: center;
+  left: 300px;
+}
+.meme button{
+  position: absolute;
+  top: 250px;
+  left: 490px;
+  width: 300px;
+  height: 50px;
+  background-color: purple;
+  color: white;
+  border-radius: 5px;
+  font-size: 1rem;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.meme .meme--img{
+  width: 580px;
+  height: 360px;
+  position: relative;
+  top: 190px;
+  left: 350px;
+}
+.meme--pic{
+  width: 500px;
+  height: 390px;
+  position: absolute;
+  top: 350px;
+  left: 400px;
+}
