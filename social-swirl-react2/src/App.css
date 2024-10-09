@@ -1,0 +1,294 @@
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Jost:ital,wght@0,100..900;1,100..900&display=swap');
+
+.main{
+  width: 100%;
+}
+.main nav{
+  background: #BCCDE0;
+}
+.main nav img{
+  width: 160px;
+  height: 90px;
+  cursor: pointer;
+}
+.main nav .btn1, .btn2, .btn3{
+  width: 140px;
+  height: 45px;
+  color: black;
+  font-weight: bold;
+  font-size: 1.1rem;
+  font-family:  "EB Garamond", serif;
+  border: none;
+  border-radius: 10px;
+  position: relative;
+  top: -30px;
+}
+
+@media (max-width: 768px) {
+  .main nav .btn1, .btn2, .btn3 {
+    width: 120px;
+    height: 40px;
+    font-size: 1rem;
+  }
+}
+.main nav .btn1{
+  background-color: #F15426;
+}
+.main nav .btn1:hover{
+  background: transparent;
+  color: black;
+  border: 3px solid #EC3D2F;
+}
+.main nav .btn2{
+  background-color: #EC3D2F;
+  position: relative;
+  left: 930px;
+  cursor: pointer;
+}
+.main nav .btn2:hover{
+  background: transparent;
+  color: black;
+  border: 3px solid #EC3D2F;
+  cursor: pointer;
+}
+
+.main nav span{
+  font-family: "EB Garamond", serif;
+  color: rgb(110, 109, 109);
+  font-size: 1.2rem;
+  font-weight: bold;
+  position: relative;
+  top: -30px;
+  left: 30px;
+}
+.main nav span:hover{
+  text-decoration: underline;
+  cursor: pointer;
+}
+ .header
+{
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  align-items: center;
+  background-color: #F6F6F6;
+  padding: 20px;
+}
+.header .headerContent{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+}
+.header video{
+  width: 700px;
+  height: 500px;
+  position: relative;
+  left: 10px;
+}
+.header h2{
+  font-family: "Jost", serif;
+  font-size: 2rem;
+}
+.header p{
+  font-family: "Jost", serif;
+  font-size: 1.3rem;
+}
+.header .headerContent .btn3{
+  background: #EC3D2F;
+  color: black;
+  position: relative;
+  top: 20px;
+  left: 300px;
+}
+.header .headerContent .btn3:hover{
+  background: transparent;
+  color: black;
+  border: 3px solid #EC3D2F;
+  cursor: pointer;
+  width: 150px;
+  height: 50px;
+}
+
+.main .heading{
+  font-family:  "EB Garamond", serif;
+  font-size: 2rem;
+  position: relative;
+  text-align: center;
+  justify-content: center;
+}
+.Session{
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  align-items: center;
+  position: relative;
+  top: 20px;
+  gap: 20px;
+}
+.card{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  border: 1px solid lightgray;
+  width: 290px;
+  height: 420px;
+  border-radius: 10px;
+  padding: 10px;
+  position: relative;
+  left: 50px;
+  bottom: 10px;
+}
+.card h3{
+  font-family:"EB Garamond", serif;
+  font-size: 1.3rem;
+  font-weight: bold;
+}
+.card p{
+  font-family: "Jost", serif;
+  font-size: 1rem;
+}
+.Session img{
+  width: 260px;
+  height: 160px;
+  object-fit: fill;
+  position: relative;
+  top: 20px;
+}
+.card:hover {
+  transform: scale(1.04);
+  transition: transform 1.05s;
+}
+.card .btn4{
+  width: 130px;
+  height: 50px;
+  color: black;
+  font-weight: bold;
+  font-size: 1.1rem;
+  font-family:  "EB Garamond", serif;
+  border: none;
+  border-radius: 10px;
+  position: relative;
+  top: -5px;
+  left: 60px;
+}
+.card .btn4{
+  background-color: #EC3D2F;
+  color: black;
+}
+.card .btn4:hover{
+  background-color: transparent;
+  border: 3px solid #EC3D2F;
+  color: black;
+}
+.Session .career{
+  text-align: center;
+  justify-content: center;
+  position: relative;
+  left: 350px;
+  font-family: "EB Garamond", serif;
+  font-size: 2rem;
+}
+footer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 20px;
+  position: relative;
+  bottom: 10px;
+  background: #F6F6F6;
+}
+form {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  left: 270px;
+  width: 400px;
+  height: 380px;
+  border: 1px solid lightgray;
+  background: #EC3D2F;
+  color: black;
+  border-radius: 10px;
+  top: 10px;
+  bottom: 20px;
+}
+form input[type="text"], input[type="number"], input[type="message"]
+{
+  width: 260px;
+  height: 50px;
+}
+form caption{
+  font-family: "Jost", serif;
+  font-size: 1.3rem;
+  font-weight: bold;
+  position: relative;
+  top: 4px;
+}
+footer img{
+  width: 150px;
+  height: 100px;
+}
+footer p{
+  font-size: 0.9rem;
+  font-family: "Jost", serif;
+  width: 450px;
+  position:relative;
+  left: 10;
+}
+form button{
+  width: 130px;
+  height: 50px;
+  border: none;
+  border-radius: 10px;
+  background: #BCCDE0;
+  color: black;
+  font-family: "Jost", serif;
+  font-weight: bold;
+  position: relative;
+  top: 5px;
+  bottom: 5px;
+}
+form button:hover{
+  background: transparent;
+  color:black;
+  border: 3px solid #BCCDE0;
+  border: 2px solid black;
+}
+@media (max-width: 768px) {
+  .main nav .btn1, .btn2, .btn3 {
+    width: 120px;
+    height: 40px;
+    font-size: 1rem;
+  }
+
+  .header {
+    flex-direction: column;
+  }
+
+  .header video {
+    width: 100%;
+  }
+
+  .header .headerContent .btn3 {
+    margin: 10px 0;
+  }
+
+  .card {
+    width: 100%;
+    height: auto;
+  }
+
+  form {
+    width: 90%;
+  }
+
+  footer {
+    flex-direction: column;
+    text-align: center;
+  }
+}
+
