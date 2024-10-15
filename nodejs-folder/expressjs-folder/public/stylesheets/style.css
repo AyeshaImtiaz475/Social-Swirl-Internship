@@ -1,0 +1,32 @@
+h1{
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    color: cadetblue;
+    font-size: 25px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+p{
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 15px;
+   
+}
+button{
+    text-align: center;
+    justify-content: center;
+    background-color: chocolate;
+    color: white;
+    border: none;
+    width: 130px;
+    height: 40px;
+    position: relative;
+    left: 290px;
+    border-radius: 10px;
+}
+button:hover{
+    background-color: black;
+    color: white;
+}
